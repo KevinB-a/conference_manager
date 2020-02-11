@@ -30,3 +30,21 @@ class ConferenceModel:
         self.db.cursor.execute(self.sql, self.values)
         self.db.connection.commit()
         self.db.close_connection()
+
+    def update_conference(self, title, summary, date, hour, creation_date, conference_id):
+        """update data in table conference"""
+        self.sql = "UPDATE conference SET title = %s, summary = %s, date = %s, hour = %s, creation_date = %s WHERE conference_id =%s;"
+        self.values = (title, summary, date, hour, creation_date, conference_id)
+        self.db.initialize_connection()
+        self.db.cursor.execute(self.sql, self.values)
+        self.db.connection.commit()
+        self.db.close_connection()
+
+    def delete_conference(self, conference_id):
+        """delete data in table conference"""
+        self.sql = "DELETE FROM speaker WHERE conference_id = %s;"
+        self.values = (conference_id,)
+        self.db.initialize_connection()
+        self.db.cursor.execute(self.sql, self.values)
+        self.db.connection.commit()
+        self.db.close_connection()
