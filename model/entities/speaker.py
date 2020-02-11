@@ -1,4 +1,4 @@
-from .entities.id import Id
+from .id import Id
 
 
 class Speaker(Id):

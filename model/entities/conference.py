@@ -1,7 +1,8 @@
-from .entities.id import Id
+from model.entities.id import Id
 
 
 class Conference(Id):
+    """class representing the conference entity"""
 
     def __init__(self, data=False):
         """initialize attribute """

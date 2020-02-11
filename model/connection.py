@@ -12,9 +12,6 @@ class Connection:
     DATABASE = "agenda"
 
     def __init__(self):
-        """
-
-        """
         # The class stores an instance of pyscopg2 connection and cursor classes
         self.connection = None
         self.cursor = None

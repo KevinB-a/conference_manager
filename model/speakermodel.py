@@ -1,6 +1,6 @@
 from .connection import Connection
 
-from .speaker import Speaker
+from .entities.speaker import Speaker
 
 
 class SpeakerModel:
