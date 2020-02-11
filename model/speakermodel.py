@@ -2,16 +2,18 @@ from .connection import Connection
 
 from .speaker import Speaker
 
+
 class SpeakerModel:
-    """"""
+    """class to perform all queries in table speaker"""
 
     def __init__(self):
         """initialize arguments"""
+        self.values = ()
         self.sql = ""
         self.db = Connection()
 
     def display_speaker(self):
-        """"""
+        """select all speaker in table speaker"""
         self.sql = "SELECT * FROM speaker;"
         self.db.initialize_connection()
         self.db.cursor.execute(self.sql)
@@ -19,3 +21,12 @@ class SpeakerModel:
         self.db.close_connection()
         for key, values in enumerate(speaker):
             speaker[key] = Speaker(values)
+
+    def add_speaker(self, last_name, first_name, description, status, job):
+        """add new entry in table speaker"""
+        self.sql = "INSERT INTO speaker(last_name, first_name, description, status, job) VALUES(%s, %s, %s, %s, %s);"
+        self.values = (last_name, first_name, description, status, job)
+        self.db.initialize_connection()
+        self.db.cursor.execute(self.sql, self.values)
+        self.db.connection.commit()
+        self.db.close_connection()
