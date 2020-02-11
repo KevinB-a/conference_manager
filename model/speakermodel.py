@@ -30,3 +30,13 @@ class SpeakerModel:
         self.db.cursor.execute(self.sql, self.values)
         self.db.connection.commit()
         self.db.close_connection()
+
+    def update_speaker(self, last_name, first_name, description, status, job, speaker_id):
+        """update data in table speaker"""
+        self.sql = "UPDATE speaker SET last_name = %s, first_name = %s, description = %s , status = %s, job = %s " \
+                   "WHERE speaker_id = %s; "
+        self.values =(last_name, first_name, description, status, job, speaker_id)
+        self.db.initialize_connection()
+        self.db.cursor.execute(self.sql, self.values)
+        self.db.connection.commit()
+        self.db.close_connection()
