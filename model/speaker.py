@@ -3,8 +3,6 @@ from .entities.id import Id
 
 class Speaker(Id):
 
-    job: None
-
     def __init__(self, data):
         """initialize attribute"""
         super().__init__()
