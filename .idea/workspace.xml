@@ -4,13 +4,19 @@
     <list default="true" id="dec48f98-4446-47be-95e4-c3d3cdd8ddbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/entities/id.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/id.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/conferencemodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/conferencemodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/entities/speaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/speaker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/speakermodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/speakermodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/conferenceview.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/conferenceview.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/speakerview.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/speakerview.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="conference_manager" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,6 +42,29 @@
       <recent name="$PROJECT_DIR$/model/entities" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="conference_manager" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -49,26 +78,63 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="291" y="120" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581342099584">
+    <state x="291" y="120" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581511039604">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state x="291" y="120" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1533.873@67.27.1533.873" timestamp="1581342099584" />
-    <state x="641" y="181" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1581342225876">
+    <state x="291" y="120" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1533.873@67.27.1533.873" timestamp="1581511039604" />
+    <state x="641" y="181" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1581511453659">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state x="641" y="181" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1533.873@67.27.1533.873" timestamp="1581342225876" />
+    <state x="641" y="181" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1533.873@67.27.1533.873" timestamp="1581511453659" />
     <state x="437" y="27" width="782" height="873" key="CommitChangelistDialog2" timestamp="1581412683375">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
     <state x="437" y="27" width="782" height="873" key="CommitChangelistDialog2/67.27.1533.873@67.27.1533.873" timestamp="1581412683375" />
-    <state x="167" y="125" width="1333" height="675" key="DiffContextDialog" timestamp="1581412671024">
+    <state x="167" y="125" width="1333" height="675" key="DiffContextDialog" timestamp="1581505904648">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state x="167" y="125" width="1333" height="675" key="DiffContextDialog/67.27.1533.873@67.27.1533.873" timestamp="1581412671024" />
+    <state x="167" y="125" width="1333" height="675" key="DiffContextDialog/67.27.1533.873@67.27.1533.873" timestamp="1581505904648" />
+    <state x="616" y="220" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581506200771">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="616" y="220" width="424" height="484" key="FileChooserDialogImpl/67.27.1533.873@67.27.1533.873" timestamp="1581506200771" />
+    <state width="1510" height="219" key="GridCell.Tab.0.bottom" timestamp="1581520777702">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state width="1510" height="219" key="GridCell.Tab.0.bottom/67.27.1533.873@67.27.1533.873" timestamp="1581520777702" />
+    <state width="1510" height="219" key="GridCell.Tab.0.center" timestamp="1581520777701">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state width="1510" height="219" key="GridCell.Tab.0.center/67.27.1533.873@67.27.1533.873" timestamp="1581520777701" />
+    <state width="1510" height="219" key="GridCell.Tab.0.left" timestamp="1581520777700">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state width="1510" height="219" key="GridCell.Tab.0.left/67.27.1533.873@67.27.1533.873" timestamp="1581520777700" />
+    <state width="1510" height="219" key="GridCell.Tab.0.right" timestamp="1581520777701">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state width="1510" height="219" key="GridCell.Tab.0.right/67.27.1533.873@67.27.1533.873" timestamp="1581520777701" />
+    <state x="572" y="136" width="513" height="652" key="RollbackChangesDialog" timestamp="1581512000222">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="572" y="136" width="513" height="652" key="RollbackChangesDialog/67.27.1533.873@67.27.1533.873" timestamp="1581512000222" />
     <state x="322" y="97" key="SettingsEditor" timestamp="1581414398127">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
@@ -81,9 +147,17 @@
       <screen x="67" y="27" width="1533" height="873" />
     </state>
     <state x="677" y="379" width="303" height="167" key="VCS.ChangelistChooser/67.27.1533.873@67.27.1533.873" timestamp="1581412518065" />
-    <state x="489" y="290" key="com.intellij.ide.util.TipDialog" timestamp="1581496074088">
+    <state x="489" y="290" key="com.intellij.ide.util.TipDialog" timestamp="1581511970238">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state x="489" y="290" key="com.intellij.ide.util.TipDialog/67.27.1533.873@67.27.1533.873" timestamp="1581496074088" />
+    <state x="489" y="290" key="com.intellij.ide.util.TipDialog/67.27.1533.873@67.27.1533.873" timestamp="1581511970238" />
+    <state x="612" y="152" width="432" height="620" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581505767285">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="612" y="152" width="432" height="620" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1533.873@67.27.1533.873" timestamp="1581505767285" />
+    <state x="496" y="212" width="672" height="678" key="search.everywhere.popup" timestamp="1581506617666">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="496" y="212" width="672" height="678" key="search.everywhere.popup/67.27.1533.873@67.27.1533.873" timestamp="1581506617666" />
   </component>
 </project>

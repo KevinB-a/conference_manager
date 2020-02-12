@@ -31,5 +31,5 @@ class ConferenceView:
 
     def remove_conference(self):
         """display inputs to delete conference in table conference"""
-        conference_id = int(input(""))
+        conference_id = int(input("Entrez l'id de la conference :"))
         self.model.delete_conference(conference_id)

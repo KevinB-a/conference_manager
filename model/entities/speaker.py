@@ -18,7 +18,6 @@ class Speaker(Id):
     def __str__(self):
         text = "{} {} information \n\
         description : {} \n\
-        department : {} \n\
         status : {} \n\
         job : {} \n\
         "
