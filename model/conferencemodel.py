@@ -22,10 +22,10 @@ class ConferenceModel:
         for key, values in enumerate(conference):
             conference[key] = Conference(values)
 
-    def add_conference(self, title, summary, date, hour, creation_date):
+    def add_conference(self, title, summary, date, hour):
         """add new entry in table conference"""
-        self.sql = "INSERT INTO conference(title, summary, date, hour, creation_date) VALUES(%s, %s, %s, %s, %S);"
-        self.values = (title, summary, date, hour, creation_date)
+        self.sql = "INSERT INTO conference(title, summary, date, hour, creation_date) VALUES(%s, %s, %s, %s, now());"
+        self.values = (title, summary, date, hour)
         self.db.initialize_connection()
         self.db.cursor.execute(self.sql, self.values)
         self.db.connection.commit()
@@ -33,8 +33,8 @@ class ConferenceModel:
 
     def update_conference(self, title, summary, date, hour, creation_date, conference_id):
         """update data in table conference"""
-        self.sql = "UPDATE conference SET title = %s, summary = %s, date = %s, hour = %s, creation_date = %s WHERE conference_id =%s;"
-        self.values = (title, summary, date, hour, creation_date, conference_id)
+        self.sql = "UPDATE conference SET title = %s, summary = %s, date = %s, hour = %s WHERE conference_id =%s;"
+        self.values = (title, summary, date, hour, conference_id)
         self.db.initialize_connection()
         self.db.cursor.execute(self.sql, self.values)
         self.db.connection.commit()

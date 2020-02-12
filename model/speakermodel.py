@@ -14,7 +14,7 @@ class SpeakerModel:
 
     def display_speaker(self):
         """select all speaker in table speaker"""
-        self.sql = "SELECT * FROM speaker;"
+        self.sql = "SELECT * FROM speaker WHERE status = True;"
         self.db.initialize_connection()
         self.db.cursor.execute(self.sql)
         speaker = self.db.cursor.fetchall()
@@ -22,10 +22,10 @@ class SpeakerModel:
         for key, values in enumerate(speaker):
             speaker[key] = Speaker(values)
 
-    def add_speaker(self, last_name, first_name, description, status, job):
+    def add_speaker(self, last_name, first_name, description, job):
         """add new entry in table speaker"""
         self.sql = "INSERT INTO speaker(last_name, first_name, description, status, job) VALUES(%s, %s, %s, %s, %s);"
-        self.values = (last_name, first_name, description, status, job)
+        self.values = (last_name, first_name, description, job)
         self.db.initialize_connection()
         self.db.cursor.execute(self.sql, self.values)
         self.db.connection.commit()
