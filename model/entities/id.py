@@ -1,5 +1,5 @@
 class Id:
-
+    """class hydrate """
     def __init__(self):
         self.id = None
 

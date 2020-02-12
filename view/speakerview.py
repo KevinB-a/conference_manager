@@ -9,7 +9,7 @@ class SpeakerView:
 
     def show_speakers(self):
         """display all speakers"""
-        print("Bonjour voici la liste des conferencier ")
+        print("Bonjour voici la liste des conferenciers ")
         self.model.display_speaker()
 
     def new_speaker(self):
