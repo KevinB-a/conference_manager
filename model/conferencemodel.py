@@ -18,14 +18,13 @@ class ConferenceModel:
         self.db.cursor.execute(self.sql)
         conference = self.db.cursor.fetchall()
         self.db.close_connection()
-        """for key, values in enumerate(conference):
-            conference[key] = Conference(values)"""
-        return conference
+        for key, values in enumerate(conference):
+            conference[key] = Conference(values)
 
-    def add_conference(self, title, summary, date, hour):
+    def add_conference(self, title, summary, date, hour, speaker_id):
         """add new entry in table conference"""
-        self.sql = "INSERT INTO conference(title, summary, date, hour, creation_date) VALUES(%s, %s, %s, %s, now());"
-        self.values = (title, summary, date, hour)
+        self.sql = "INSERT INTO conference(title, summary, date, hour, creation_date, speaker_id) VALUES(%s, %s, %s, %s, now(),%s);"
+        self.values = (title, summary, date, hour, speaker_id)
         self.db.initialize_connection()
         self.db.cursor.execute(self.sql, self.values)
         self.db.connection.commit()

@@ -19,7 +19,7 @@ class SpeakerModel:
         self.db.cursor.execute(sql)
         speaker = self.db.cursor.fetchall()
         self.db.close_connection()
-        return speaker
+        print(speaker)
 
     def add_speaker(self, last_name, first_name, description, job):
         """add new entry in table speaker"""

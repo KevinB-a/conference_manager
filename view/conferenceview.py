@@ -10,7 +10,12 @@ class ConferenceView:
     def show_conferences(self):
         """display all conferences with two fields from speaker"""
         print("Bonjour voici la liste des conferences")
-        self.model.display_conferences()
+        conferences = self.model.display_conferences()
+        if conferences:
+            for conference in conferences:
+                print(conference)
+        else:
+            print("Pas de conference dans la base de donnees")
 
     def new_conference(self):
         """Displays inputs to register a new speaker in table speaker"""
@@ -18,7 +23,8 @@ class ConferenceView:
         summary = input("Entrez le resume de la conference :")
         date = input("Entrez la date de la conference :")
         hour = input("Entrez l'heure de la conference :")
-        self.model.add_conference(title, summary, date, hour)
+        speaker_id = int(input("Entrez l'id du conférencier :"))
+        self.model.add_conference(title, summary, date, hour, speaker_id)
 
     def to_update_conference(self):
         """display input to modify a new speaker in table speaker """
