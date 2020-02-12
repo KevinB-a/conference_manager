@@ -2,7 +2,7 @@ from model.speakermodel import SpeakerModel
 
 
 class SpeakerView:
-    """class to retrieve model info"""
+    """class to retrieve speaker model info"""
 
     def __init__(self):
         self.model = SpeakerModel()

@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dec48f98-4446-47be-95e4-c3d3cdd8ddbe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/conferencemodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/conferencemodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/speakermodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/speakermodel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/conferenceview.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/conferenceview.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/speakerview.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/speakerview.py" afterDir="false" />
     </list>

@@ -2,6 +2,7 @@ from model.conferencemodel import ConferenceModel
 
 
 class ConferenceView:
+    """class to retrieve conference model info """
 
     def __init__(self):
         self.model = ConferenceModel()
@@ -21,14 +22,14 @@ class ConferenceView:
 
     def to_update_conference(self):
         """display input to modify a new speaker in table speaker """
-        title = input("")
-        summary = input("")
-        date = input("")
-        hour = input("")
-        conference_id = input("")
+        title = input("Entrez le titre de la conference :")
+        summary = input("Entrez le resume de la conference :")
+        date = input("Entrez la date de la conference :")
+        hour = input("Entrez l'heure de la conference :")
+        conference_id = int(input("Entrez l'id de la conference"))
         self.model.update_conference(title, summary, date, hour, conference_id)
 
     def remove_conference(self):
         """display inputs to delete conference in table conference"""
-        conference_id = input("")
+        conference_id = int(input(""))
         self.model.delete_conference(conference_id)
