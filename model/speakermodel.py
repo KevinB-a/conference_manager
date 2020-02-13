@@ -19,7 +19,7 @@ class SpeakerModel:
         self.db.cursor.execute(self.sql)  # execute the query
         speaker = self.db.cursor.fetchall()  # display every data in table
         self.db.close_connection()  # disconnect from db
-        for key, value in enumerate(speaker):
+        for key, value in enumerate(speaker):  # take keys and values from dictionary speaker and return it
             speaker[key] = Speaker(value)
         return speaker
 

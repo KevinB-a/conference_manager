@@ -10,6 +10,7 @@ class Speaker(Hydrate):
             self.hydrate(data)
 
     def __str__(self):
+        """method to display informations on every data in table speaker """
         return """~~~~~~~~~~~~~~~~~~~~~~~~
 last_name : {} \n\
 first_name : {} \n\

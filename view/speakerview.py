@@ -5,15 +5,15 @@ class SpeakerView:
     """class to retrieve speaker model info"""
 
     def __init__(self):
-        self.model = SpeakerModel()
+        self.model = SpeakerModel()  # instantiate an object of class SpeakerModel
 
     def show_speakers(self):
         """display all speakers"""
         print("Bonjour voici la liste des conferenciers ")
         speakers = self.model.display_speaker()
-        if speakers:
-            for speaker in speakers:
-                print(speaker)
+        if speakers:  # if speakers == True
+            for speaker in speakers:  # for every speaker in speakers list
+                print(speaker)  # display speaker
 
     def new_speaker(self):
         """Displays inputs to register a new speaker in table speaker"""

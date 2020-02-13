@@ -7,10 +7,11 @@ class Conference(Hydrate):
     def __init__(self, data=False):
         """initialize attribute """
         super().__init__()
-        if data:
+        if data:   # if data == True execute hydrate method
             self.hydrate(data)
 
     def __str__(self):
+        """method to display every informations in table conference and last_name , first_name from speaker"""
         return """~~~~~~~~~~~~~~~~~~~~~~~~
 title : {} \n\
 summary : {} \n\
