@@ -18,38 +18,39 @@ if __name__ == "__main__":
     answer = input("entrez votre choix :")  # Call the right action function according to user input
     while answer != "q":
         if answer == "c":
-            conference.show_conferences()
-            while answer != "q":
-                print("que souhaitez vous faire ? a : ajouter , m : modifier , r : supprimer q : quitter")
+            conference.show_conferences()  # display every conferences
+            while answer != "e":
+                print("que souhaitez vous faire ? a : ajouter , m : modifier , r : supprimer , e : quitter")
                 answer = input("entrez votre choix :")
                 if answer == "a":
-                    conference.new_conference()
+                    conference.new_conference()  # add conference
                     print("vous avez ajouter une conférence !")
                 elif answer == "m":
-                    conference.to_update_conference()
+                    conference.to_update_conference()  # modify conference
                     print("vous avez modifier une conference")
                 elif answer == "r":
-                    conference.remove_conference()
+                    conference.remove_conference()  # delete conference
                     print("vous avez supprimer un conference")
                 else:
                     exit()
 
         elif "s" == answer:
-            speaker.show_speakers()
-            print("que souhaitez vous faire ? a : ajouter , m : modifier , r : supprimer,  q : quitter")
-            answer = input("entrez votre choix :")
-            if answer == "a":
-                speaker.new_speaker()
-                print("vous avez ajouter un conferencier")
-            elif answer == "m":
-                speaker.to_update_speaker()
-                print("vous avez modifier un conferencier")
-            elif answer == "r":
-                speaker.remove_speaker()
-                print("vous avez supprimer un conferencier")
+            while answer != "e":
+                speaker.show_speakers()
+                print("que souhaitez vous faire ? a : ajouter , m : modifier , r : supprimer,  q : quitter")
+                answer = input("entrez votre choix :")
+                if answer == "a":
+                    speaker.new_speaker()
+                    print("vous avez ajouter un conferencier")
+                elif answer == "m":
+                    speaker.to_update_speaker()
+                    print("vous avez modifier un conferencier")
+                elif answer == "r":
+                    speaker.remove_speaker()
+                    print("vous avez supprimer un conferencier")
 
-            else:
-                exit()
+                else:
+                    exit()
 
         else:
             exit()

@@ -14,17 +14,19 @@ class SpeakerModel:
 
     def display_speaker(self):
         """select all speaker in table speaker"""
-        sql = "SELECT * FROM speaker WHERE status = 't';"
-        self.db.initialize_connection()
-        self.db.cursor.execute(sql)
-        speaker = self.db.cursor.fetchall()
-        self.db.close_connection()
-        print(speaker)
+        self.sql = "SELECT * FROM speaker WHERE status = 't';"
+        self.db.initialize_connection()  # connect to db
+        self.db.cursor.execute(self.sql)  # execute the query
+        speaker = self.db.cursor.fetchall()  # display every data in table
+        self.db.close_connection()  # disconnect from db
+        for key, value in enumerate(speaker):
+            speaker[key] = Speaker(value)
+        return speaker
 
     def add_speaker(self, last_name, first_name, description, job):
         """add new entry in table speaker"""
         self.sql = "INSERT INTO speaker(last_name, first_name, description, job) VALUES(%s, %s, %s, %s);"
-        self.values = (last_name, first_name, description, job)
+        self.values = (last_name, first_name, description, job)  # values in percent
         self.db.initialize_connection()
         self.db.cursor.execute(self.sql, self.values)
         self.db.connection.commit()

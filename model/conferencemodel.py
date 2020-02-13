@@ -13,13 +13,18 @@ class ConferenceModel:
 
     def display_conferences(self):
         """select all conference from conference and add last name and first name from speaker """
-        self.sql = "SELECT c.*, s.last_name, s.first_name FROM conference AS c LEFT JOIN speaker AS s ON c.speaker_id =s.speaker_id; "
+        # self.sql = "SELECT c.*, s.last_name, s.first_name FROM conference AS c LEFT JOIN speaker AS s ON c.speaker_id =s.speaker_id; "
+        self.sql = """SELECT * FROM conference AS c
+        INNER JOIN speaker AS s
+        ON s.speaker_id = c.speaker_id
+        ORDER BY c.date, c.hour;"""
         self.db.initialize_connection()
         self.db.cursor.execute(self.sql)
         conference = self.db.cursor.fetchall()
         self.db.close_connection()
-        for key, values in enumerate(conference):
-            conference[key] = Conference(values)
+        for key, value in enumerate(conference):
+            conference[key] = Conference(value)
+        return conference
 
     def add_conference(self, title, summary, date, hour, speaker_id):
         """add new entry in table conference"""

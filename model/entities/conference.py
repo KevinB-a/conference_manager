@@ -1,26 +1,24 @@
-from model.entities.id import Id
+from .Hydrate import Hydrate
 
 
-class Conference(Id):
+class Conference(Hydrate):
     """class representing the conference entity"""
 
     def __init__(self, data=False):
         """initialize attribute """
         super().__init__()
-        self.conference_id = None
-        self.title = None
-        self.summary = None
-        self.date = None
-        self.hour = None
-        self.creation_date = None
         if data:
             self.hydrate(data)
 
     def __str__(self):
-        text = "{} information \n\
-        summary : {} \n\
-        date : {} \n\
-        hour : {} \n\
-        creation_date : {} \n\
-        "
-        print(text.format(self.title, self.summary, self.date, self.hour, self.creation_date))
+        return """~~~~~~~~~~~~~~~~~~~~~~~~
+title : {} \n\
+summary : {} \n\
+date : {} \n\
+hour : {} \n\
+creation_date : {} \n\
+last_name : {} \n\
+first_name : {} \n\
+speaker_id : {} \n\
+~~~~~~~~~~~~~~~~~~~~~~~~       
+        """.format(self.title, self.summary, self.date, self.hour,self.creation_date,  self.last_name, self.first_name, self.speaker_id)

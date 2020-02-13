@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dec48f98-4446-47be-95e4-c3d3cdd8ddbe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/entities/Hydrate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/conferencemodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/conferencemodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/entities/conference.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/conference.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/entities/id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/entities/speaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/speaker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/speakermodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/speakermodel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/conferenceview.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/conferenceview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/speakerview.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/speakerview.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +99,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="428" y="124" width="800" height="677" key="#Inspections" timestamp="1581590610557">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="428" y="124" width="800" height="677" key="#Inspections/67.27.1533.873@67.27.1533.873" timestamp="1581590610557" />
     <state x="291" y="120" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581511039604">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
@@ -112,22 +123,22 @@
       <screen x="67" y="27" width="1533" height="873" />
     </state>
     <state x="616" y="220" width="424" height="484" key="FileChooserDialogImpl/67.27.1533.873@67.27.1533.873" timestamp="1581506200771" />
-    <state width="1510" height="219" key="GridCell.Tab.0.bottom" timestamp="1581522566884">
+    <state width="1510" height="219" key="GridCell.Tab.0.bottom" timestamp="1581604006522">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1510" height="219" key="GridCell.Tab.0.bottom/67.27.1533.873@67.27.1533.873" timestamp="1581522566884" />
-    <state width="1510" height="219" key="GridCell.Tab.0.center" timestamp="1581522566883">
+    <state width="1510" height="219" key="GridCell.Tab.0.bottom/67.27.1533.873@67.27.1533.873" timestamp="1581604006522" />
+    <state width="1510" height="219" key="GridCell.Tab.0.center" timestamp="1581604006521">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1510" height="219" key="GridCell.Tab.0.center/67.27.1533.873@67.27.1533.873" timestamp="1581522566883" />
-    <state width="1510" height="219" key="GridCell.Tab.0.left" timestamp="1581522566882">
+    <state width="1510" height="219" key="GridCell.Tab.0.center/67.27.1533.873@67.27.1533.873" timestamp="1581604006521" />
+    <state width="1510" height="219" key="GridCell.Tab.0.left" timestamp="1581604006520">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1510" height="219" key="GridCell.Tab.0.left/67.27.1533.873@67.27.1533.873" timestamp="1581522566882" />
-    <state width="1510" height="219" key="GridCell.Tab.0.right" timestamp="1581522566883">
+    <state width="1510" height="219" key="GridCell.Tab.0.left/67.27.1533.873@67.27.1533.873" timestamp="1581604006520" />
+    <state width="1510" height="219" key="GridCell.Tab.0.right" timestamp="1581604006521">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1510" height="219" key="GridCell.Tab.0.right/67.27.1533.873@67.27.1533.873" timestamp="1581522566883" />
+    <state width="1510" height="219" key="GridCell.Tab.0.right/67.27.1533.873@67.27.1533.873" timestamp="1581604006521" />
     <state x="572" y="136" width="513" height="652" key="RollbackChangesDialog" timestamp="1581512000222">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
@@ -144,10 +155,10 @@
       <screen x="67" y="27" width="1533" height="873" />
     </state>
     <state x="677" y="379" width="303" height="167" key="VCS.ChangelistChooser/67.27.1533.873@67.27.1533.873" timestamp="1581412518065" />
-    <state x="489" y="290" key="com.intellij.ide.util.TipDialog" timestamp="1581511970238">
+    <state x="489" y="290" key="com.intellij.ide.util.TipDialog" timestamp="1581582991814">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state x="489" y="290" key="com.intellij.ide.util.TipDialog/67.27.1533.873@67.27.1533.873" timestamp="1581511970238" />
+    <state x="489" y="290" key="com.intellij.ide.util.TipDialog/67.27.1533.873@67.27.1533.873" timestamp="1581582991814" />
     <state x="612" y="152" width="432" height="620" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581505767285">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
