@@ -12,15 +12,14 @@ if __name__ == "__main__":
     conference = ConferenceView()
     os.system('cls' if os.name == 'nt' else 'clear')
     print("Bienvenue sur votre systeme de gestion des conferenciers et conferences ")
-    time.sleep(1)
+    time.sleep(1)  # display remains for 1 sec
     print(
         "Que souhaitez vous gerer les conferences ou les conferenciers ? tapez sur c pour les conferences , s pour les conferenciers q pour quitter")
     answer = input("entrez votre choix :")  # Call the right action function according to user input
     while answer != "q":
         if answer == "c":
-            conference.show_conferences()  # display every conferences
+            print("que souhaitez vous faire ? a : ajouter , m : modifier , r : supprimer , e : quitter")
             while answer != "e":
-                print("que souhaitez vous faire ? a : ajouter , m : modifier , r : supprimer , e : quitter")
                 answer = input("entrez votre choix :")
                 if answer == "a":
                     conference.new_conference()  # add conference
@@ -28,6 +27,8 @@ if __name__ == "__main__":
                 elif answer == "m":
                     conference.to_update_conference()  # modify conference
                     print("vous avez modifier une conference")
+                elif answer == "v":
+                    conference.show_conferences()  # display every conferences
                 elif answer == "r":
                     conference.remove_conference()  # delete conference
                     print("vous avez supprimer un conference")

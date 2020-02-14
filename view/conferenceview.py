@@ -10,10 +10,10 @@ class ConferenceView:
     def show_conferences(self):
         """display all conferences with two fields from speaker"""
         print("Bonjour voici la liste des conferences")
-        conferences = self.model.display_conferences()
-        if conferences:
+        conferences = self.model.display_conferences()  # the variable conference recover data from method display_conference
+        if conferences:  # if conferences exists
             for conference in conferences:
-                print(conference)
+                print(conference)  # display every conference in conferences
         else:
             print("Pas de conference dans la base de donnees")
 

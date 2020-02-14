@@ -11,8 +11,9 @@ class Conference(Hydrate):
             self.hydrate(data)
 
     def __str__(self):
-        """method to display every informations in table conference and last_name , first_name from speaker"""
-        return """~~~~~~~~~~~~~~~~~~~~~~~~
+        """method to display every information in table conference and last_name , first_name from speaker"""
+        # display information this way
+        return """~~~~~~~~~~~~~~~~~~~~~~~~  
 title : {} \n\
 summary : {} \n\
 date : {} \n\

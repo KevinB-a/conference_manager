@@ -19,4 +19,4 @@ status: {} \n\
 job : {}
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-        """.format(self.last_name, self.first_name, self.description, self.status, self.job)
+        """.format(self.last_name, self.first_name, self.description, self.status, self.job)  # in the method format we place the arguments that we want to display in the braces

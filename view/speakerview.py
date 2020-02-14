@@ -17,7 +17,7 @@ class SpeakerView:
 
     def new_speaker(self):
         """Displays inputs to register a new speaker in table speaker"""
-        last_name = input("Entrez le nom de famille :")
+        last_name = input("Entrez le nom de famille :") # input for ask to user to enter value
         first_name = input("Entrez le prenom :")
         description = input("Entrez une description")
         job = input("Entrez la profession")
