@@ -17,7 +17,7 @@ class SpeakerView:
 
     def new_speaker(self):
         """Displays inputs to register a new speaker in table speaker"""
-        last_name = input("Entrez le nom de famille :") # input for ask to user to enter value
+        last_name = input("Entrez le nom de famille :")  # inputs for ask to user to enter values
         first_name = input("Entrez le prenom :")
         description = input("Entrez une description")
         job = input("Entrez la profession")
@@ -35,4 +35,4 @@ class SpeakerView:
     def remove_speaker(self):
         """display inputs to delete speaker in table speaker"""
         speaker_id = input("Entrez l'id du conferencier :")
-        self.model.delete_speaker(speaker_id)
+        self.model.delete_speaker(speaker_id)  # call method from class SpeakerModel

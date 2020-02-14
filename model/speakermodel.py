@@ -43,9 +43,9 @@ class SpeakerModel:
 
     def delete_speaker(self, speaker_id):
         """delete data in table speaker"""
-        sql = "DELETE FROM speaker WHERE speaker_id = %s;"
-        values = (speaker_id,)
+        self.sql = "DELETE FROM speaker WHERE speaker_id = %s;"
+        self.values = (speaker_id,)
         self.db.initialize_connection()
-        self.db.cursor.execute(sql, values)
+        self.db.cursor.execute(self.sql, self.values)
         self.db.connection.commit()
         self.db.close_connection()
