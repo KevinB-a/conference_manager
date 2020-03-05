@@ -22,3 +22,4 @@ Faire en sorte que si l'on supprime un conférencier alors toutes les conférenc
 Usage de la programmation orientée objet- Respect du principe DRY- Essayer de respecter certains des principes SOLID- 
 Programme exécutable par le lancement d'un fichier main.py- 
 Intégration d'une base de données PostgreSQL via la librairie Psycopg2
+---------------------------------------------------------------------------------------------------------------------
